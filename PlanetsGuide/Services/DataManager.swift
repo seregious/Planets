@@ -19,7 +19,7 @@ class DataManager {
         name: "Mercury",
         image: "",
         generalInfo: "",
-        number: "",
+        number: "first planet",
         orbitalSpeed: 0,
         square: 0,
         radius: 0,
