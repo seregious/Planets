@@ -49,22 +49,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="65" translatesAutoresizingMaskIntoConstraints="NO" id="3ZB-gG-rug">
-                                <rect key="frame" x="152.5" y="374.5" width="109.5" height="147.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3ZB-gG-rug">
+                                <rect key="frame" x="20" y="160" width="374" height="151.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fdc-gU-cXT">
-                                        <rect key="frame" x="0.0" y="0.0" width="109.5" height="53.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="53.5"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Label">
                                                 <attributes>
                                                     <font key="NSFont" metaFont="system" size="48"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
                                         </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XDa-uP-QZ6">
-                                        <rect key="frame" x="26" y="118.5" width="57" height="29"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="XDa-uP-QZ6">
+                                        <rect key="frame" x="0.0" y="73.5" width="374" height="29"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Label">
+                                                <attributes>
+                                                    <font key="NSFont" metaFont="system" size="24"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="25" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ttl-dT-03I">
+                                        <rect key="frame" x="0.0" y="122.5" width="374" height="29"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -75,12 +88,14 @@
                         <viewLayoutGuide key="safeArea" id="oTV-5V-OjW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="3ZB-gG-rug" firstAttribute="centerX" secondItem="dZI-0u-GWR" secondAttribute="centerX" id="TaY-l1-8jo"/>
-                            <constraint firstItem="3ZB-gG-rug" firstAttribute="centerY" secondItem="dZI-0u-GWR" secondAttribute="centerY" id="onN-Vf-k5P"/>
+                            <constraint firstItem="3ZB-gG-rug" firstAttribute="top" secondItem="oTV-5V-OjW" secondAttribute="top" constant="20" id="2Qg-Q1-HBK"/>
+                            <constraint firstItem="3ZB-gG-rug" firstAttribute="leading" secondItem="oTV-5V-OjW" secondAttribute="leading" constant="20" id="dMZ-Ar-ToO"/>
+                            <constraint firstItem="oTV-5V-OjW" firstAttribute="trailing" secondItem="3ZB-gG-rug" secondAttribute="trailing" constant="20" id="rwq-eM-bQ5"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tF4-1C-Hmb"/>
                     <connections>
+                        <outlet property="planetDetails" destination="ttl-dT-03I" id="SbV-4E-oPS"/>
                         <outlet property="planetInfo" destination="XDa-uP-QZ6" id="ESM-bg-quZ"/>
                         <outlet property="planetName" destination="Fdc-gU-cXT" id="few-Th-kqD"/>
                     </connections>

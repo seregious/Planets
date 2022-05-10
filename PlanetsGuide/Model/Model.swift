@@ -9,5 +9,5 @@ import Foundation
 
 struct Planet {
     let name, image, generalInfo, number: String
-    let orbitalSpeed, square, radius, weight, day, year, temperature: Int
+    let orbitalSpeed, square, radius, weight, day, year, temperature: Double
 }
